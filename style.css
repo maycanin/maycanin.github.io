@@ -1,0 +1,90 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.card:hover, .header-port:hover {
+    background: rgb(10, 50, 18);
+}
+header {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    font-size: xx-large;
+}
+img {
+    width: 10vw;
+    margin-top: 30px;
+}
+.button {
+    color: white;
+    border: none;
+    font-weight: bold;
+    background: #008cba;
+    border-radius: 0.1875rem;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.input {
+    color: black;
+    border: none;
+    font-weight: bold;
+    background: white;
+    border-radius: 0.1875rem;
+    width: 11rem;
+    height: 3rem;
+    margin: 20px;
+    border-radius: 5px;
+}
+.portfolio {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    background: rgba(102, 102, 103, 0.5);
+    width: 100vw;
+    height: 550px;
+}
+.header-port {
+    position: absolute;
+    top: -10px;
+    background: rgba(102, 102, 103);
+    padding: 10px;
+    border-radius: 10px;
+}
+.card {
+    border-radius: 10px;
+    margin: 2em;
+    background: rgba(0, 0, 0, 0.5);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes card {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -60px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .card {
+    animation: card 1s;
+  }

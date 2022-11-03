@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mayson Inácio</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="./bd.js"></script>
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Mayson Cândido Inácio</h1>
+            <h2>Desenvolvedor de Sistemas</h2>
+        </header>
+        <div class="portfolio">
+            <h2 class="header-port">Ambiente de Treinamento</h2>
+            <div class="card">
+                <h3>Conversor Celsius >> Fahrenheit</h3>
+                <input
+                    type="number"
+                    placeholder="Temperatura em Celsius"
+                    id="celsius"
+                    class="input"
+                />
+                <input
+                    type="button"
+                    value="Converter!"
+                    class="button"
+                    onclick="converteParaFahrenheit()"
+                /><br>
+                <h4 id="resultado-fahrenheit"></h4>
+            </div>
+            <div class="card">
+                <h3>Cadastrador de Nomes</h3>
+                <input
+                    type="text"
+                    placeholder="Informe o nome"
+                    id="nome"
+                    class="input"
+                />
+                <input
+                    type="button"
+                    value="Cadastrar!"
+                    class="button"
+                    onclick="cadastraNome()"
+                />
+            </div>
+        </div>
+
+    </body>
+</html>
