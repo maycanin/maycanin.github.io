@@ -13,10 +13,10 @@
             <h1>Mayson Cândido Inácio</h1>
             <h2>Desenvolvedor de Sistemas</h2>
         </header>
-        <div class="portfolio">
+        <main class="portfolio">
             <h2 class="header-port">Ambiente de Treinamento</h2>
-            <div class="card">
-                <h3>Conversor Celsius >> Fahrenheit</h3>
+            <section class="card">
+                <h3>Celsius >> Fahrenheit</h3>
                 <input
                     type="number"
                     placeholder="Temperatura em Celsius"
@@ -24,15 +24,21 @@
                     class="input"
                 />
                 <input
+                    type="text"
+                    class="input"
+                    placeholder="Resultado conversão..."
+                    id="resultado-fahrenheit"
+                    readonly
+                />
+                <input
                     type="button"
                     value="Converter!"
                     class="button"
                     onclick="converteParaFahrenheit()"
-                /><br>
-                <h4 id="resultado-fahrenheit"></h4>
-            </div>
-            <div class="card">
-                <h3>Cadastrador de Nomes</h3>
+                /><br />
+            </section>
+            <section class="card">
+                <h3>Cadastrar Informações</h3>
                 <input
                     type="text"
                     placeholder="Informe o nome"
@@ -40,13 +46,48 @@
                     class="input"
                 />
                 <input
+                    type="number"
+                    placeholder="Informe a Idade"
+                    id="idade"
+                    class="input"
+                />
+                <input
                     type="button"
                     value="Cadastrar!"
                     class="button"
-                    onclick="cadastraNome()"
+                    onclick="salvarDados()"
                 />
-            </div>
-        </div>
+            </section>
+            <section class="card">
+                <h3>Pesquisa BD</h3>
+                <input
+                    type="text"
+                    class="input"
+                    id="pesquisa-nome"
+                    placeholder="Pesquisa nome"
+                />
+                <input
+                    type="text"
+                    class="input"
+                    placeholder="Resultado idade..."
+                    id="resultado-pesquisa"
+                    readonly
+                />
+                <input
+                    type="button"
+                    class="button"
+                    value="Pesquisar!"
+                    onclick="pesquisarPorNome()"
+                />
+            </section>
+        </main>
 
+        <footer>
+            <p>
+                © 2022
+                <a href="https://ontec.vercel.app/">+OnTec Soluções em TI</a>.
+                Todos os direitos reservados.
+            </p>
+        </footer>
     </body>
 </html>

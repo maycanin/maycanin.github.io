@@ -5,24 +5,22 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
-.card:hover, .header-port:hover {
-    background: rgb(10, 50, 18);
+body {
+    background: rgba(180, 180, 180, 0.5);
 }
 header {
     background: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
     width: 100vw;
-    height: 350px;
+    height: 180px;
     text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
-    font-size: xx-large;
+    font-size: 2em;
 }
-img {
-    width: 10vw;
-    margin-top: 30px;
+h1:hover {
+    color: yellow;
 }
 .button {
     color: white;
@@ -35,6 +33,9 @@ img {
     border-radius: 5px;
     cursor: pointer;
 }
+.button:hover{
+    background: #00ba63;
+}
 .input {
     color: black;
     border: none;
@@ -45,21 +46,20 @@ img {
     height: 3rem;
     margin: 20px;
     border-radius: 5px;
+    text-align: center;
 }
 .portfolio {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 2em;
-    background: rgba(102, 102, 103, 0.5);
+    flex-wrap: wrap;
     width: 100vw;
-    height: 550px;
+    height: 600px;
 }
 .header-port {
     position: absolute;
-    top: -10px;
-    background: rgba(102, 102, 103);
+    top: -20px;
+    background: #00ba63;
     padding: 10px;
     border-radius: 10px;
 }
@@ -67,12 +67,15 @@ img {
     border-radius: 10px;
     margin: 2em;
     background: rgba(0, 0, 0, 0.5);
-    width: 80%;
-    height: 80%;
+    width: 30%;
+    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+.card:hover, .header-port:hover {
+    background: rgb(81, 82, 81);
 }
 
 @keyframes card {
@@ -87,4 +90,49 @@ img {
   }
   .card {
     animation: card 1s;
+  }
+
+  footer {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  @media screen and (max-width: 764px) {
+    header {
+        font-size: 1.5em;
+        height: 150px;
+    }
+    .header-port, h3, h4 {
+        font-size: 1em;
+    }
+
+  }
+  @media screen and (max-width: 578px) {
+    header {
+        font-size: 1em;
+        height: 110px;
+    }
+    .header-port, h3, h4 {
+        font-size: 0.6em;
+    }
+
+  }
+  @media screen and (max-width: 393px) {
+    header {
+        font-size: 0.6em;
+        height: 80px;
+    }
+    .header-port, h3, h4 {
+        font-size: 0.4em;
+    }
   }
