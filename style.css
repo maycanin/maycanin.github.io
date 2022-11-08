@@ -32,7 +32,7 @@ h1:hover {
     border-radius: 5px;
     cursor: pointer;
 }
-.button:hover{
+.button:hover {
     background: #00ba63;
 }
 .input {
@@ -73,25 +73,26 @@ h1:hover {
     justify-content: center;
     flex-direction: column;
 }
-.card:hover, .header-port:hover {
+.card:hover,
+.header-port:hover {
     background: rgb(81, 82, 81);
 }
 
 @keyframes card {
     from {
-      opacity: 0;
-      transform: translate3d(0, -60px, 0);
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
     }
     to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
-  }
-  .card {
+}
+.card {
     animation: card 1s;
-  }
+}
 
-  footer {
+footer {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     width: 100vw;
@@ -104,14 +105,16 @@ h1:hover {
     font-size: 12px;
     position: absolute;
     bottom: 0;
-  }
+}
 
-  @media screen and (max-width: 764px) {
+@media screen and (max-width: 764px) {
     header {
         font-size: 1.5em;
         height: 150px;
     }
-    .header-port, h3, h4 {
+    .header-port,
+    h3,
+    h4 {
         font-size: 1em;
     }
     .input {
@@ -119,24 +122,27 @@ h1:hover {
         height: 2.5rem;
         margin: 15px;
         border-radius: 5px;
-
-  }
-  @media screen and (max-width: 578px) {
-    header {
-        font-size: 1em;
-        height: 110px;
     }
-    .header-port, h3, h4 {
-        font-size: 0.6em;
+    @media screen and (max-width: 578px) {
+        header {
+            font-size: 1em;
+            height: 110px;
+        }
+        .header-port,
+        h3,
+        h4 {
+            font-size: 0.6em;
+        }
     }
-
-  }
-  @media screen and (max-width: 393px) {
-    header {
-        font-size: 0.6em;
-        height: 80px;
+    @media screen and (max-width: 393px) {
+        header {
+            font-size: 0.6em;
+            height: 80px;
+        }
+        .header-port,
+        h3,
+        h4 {
+            font-size: 0.4em;
+        }
     }
-    .header-port, h3, h4 {
-        font-size: 0.4em;
-    }
-  }
+}
