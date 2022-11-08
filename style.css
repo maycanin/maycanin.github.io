@@ -27,7 +27,6 @@ h1:hover {
     border: none;
     font-weight: bold;
     background: #008cba;
-    border-radius: 0.1875rem;
     width: 6rem;
     height: 3rem;
     border-radius: 5px;
@@ -41,12 +40,12 @@ h1:hover {
     border: none;
     font-weight: bold;
     background: white;
-    border-radius: 0.1875rem;
     width: 11rem;
     height: 3rem;
-    margin: 20px;
+    margin: 15px;
     border-radius: 5px;
     text-align: center;
+    /* text-transform: uppercase; */
 }
 .portfolio {
     position: relative;
@@ -65,7 +64,7 @@ h1:hover {
 }
 .card {
     border-radius: 10px;
-    margin: 2em;
+    margin: 2rem;
     background: rgba(0, 0, 0, 0.5);
     width: 30%;
     height: 50%;
@@ -115,6 +114,11 @@ h1:hover {
     .header-port, h3, h4 {
         font-size: 1em;
     }
+    .input {
+        width: 11rem;
+        height: 2.5rem;
+        margin: 15px;
+        border-radius: 5px;
 
   }
   @media screen and (max-width: 578px) {
