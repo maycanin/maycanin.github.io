@@ -52,6 +52,20 @@
                     class="input"
                 />
                 <input
+                    type="email"
+                    placeholder="Informe o email"
+                    id="email"
+                    class="input"
+                />
+                <input
+                    type="number"
+                    name="telefone"
+                    id="telefone"
+                    maxlength="15"
+                    class="input"
+                    placeholder="Informe o telefone"
+                />
+                <input
                     type="button"
                     value="Cadastrar!"
                     class="button"
@@ -65,7 +79,6 @@
                     class="input"
                     id="pesquisa-nome"
                     placeholder="Pesquisa nome"
-
                 />
                 <input
                     type="text"
@@ -84,16 +97,46 @@
 
             <section class="card">
                 <h3>Exibe Banco de Dados</h3>
-                <div id="lista-bd" style="color: #000;"></div>
-                <input type="button" class="button" value="Exibir" onclick="exibeBD()">
+                <div id="lista-bd"></div>
+                <input
+                    type="button"
+                    class="button"
+                    value="Exibir"
+                    onclick="exibeBD()"
+                />
+            </section>
+
+            <section class="card" id="altera-bd" style="display: none">
+                <h3>Altera BD</h3>
+                <input
+                    type="text"
+                    id="nome-alteracao"
+                    placeholder="Nome"
+                    class="input"
+                />
+                <input
+                    type="number"
+                    id="idade-alteracao"
+                    placeholder="Idade"
+                    class="input"
+                />
+                <div class="btn-control">
+                    <button onclick="alteraInfo()" class="button">
+                        Alterar!
+                    </button>
+                    <button onclick="excluirInfo()" class="button">
+                        Excluir!
+                    </button>
+                </div>
             </section>
         </main>
 
         <footer>
             <p>
                 © 2022
-                <a href="https://ontec.vercel.app/" target="_blank">+OnTec Soluções em TI</a>.
-                Todos os direitos reservados.
+                <a href="https://ontec.vercel.app/" target="_blank"
+                    >+OnTec Soluções em TI</a
+                >. Todos os direitos reservados.
             </p>
         </footer>
     </body>
