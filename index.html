@@ -15,7 +15,7 @@
         </header>
         <main class="portfolio">
             <h2 class="header-port">Ambiente de Treinamento</h2>
-            <section class="card">
+            <!-- <section class="card">
                 <h3>Celsius >> Fahrenheit</h3>
                 <input
                     type="number"
@@ -36,7 +36,7 @@
                     class="button"
                     onclick="converteParaFahrenheit()"
                 />
-            </section>
+            </section> -->
             <section class="card">
                 <h3>Cadastrar Informações</h3>
                 <input
@@ -58,12 +58,22 @@
                     class="input"
                 />
                 <input
-                    type="number"
+                    type="tel"
                     name="telefone"
                     id="telefone"
                     maxlength="15"
                     class="input"
+                    onkeyup="handlePhone(event)"
                     placeholder="Informe o telefone"
+                />
+                <input
+                    type="text"
+                    name="cpf"
+                    id="cpf"
+                    maxlength="14"
+                    class="input"
+                    onkeyup="handleCpf(event)"
+                    placeholder="Informe o CPF"
                 />
                 <input
                     type="button"
@@ -79,13 +89,6 @@
                     class="input"
                     id="pesquisa-nome"
                     placeholder="Pesquisa nome"
-                />
-                <input
-                    type="text"
-                    class="input"
-                    placeholder="Resultado idade..."
-                    id="resultado-pesquisa"
-                    readonly
                 />
                 <input
                     type="button"
@@ -111,14 +114,33 @@
                 <input
                     type="text"
                     id="nome-alteracao"
-                    placeholder="Nome"
                     class="input"
                 />
                 <input
                     type="number"
                     id="idade-alteracao"
-                    placeholder="Idade"
                     class="input"
+                />
+                <input
+                    type="email"
+                    id="email-alteracao"
+                    class="input"
+                />
+                <input
+                    type="tel"
+                    name="telefone"
+                    id="telefone-alteracao"
+                    maxlength="15"
+                    onkeyup="handlePhone(event)"
+                    class="input"
+                />
+                <input
+                    type="text"
+                    name="cpf"
+                    id="cpf-alteracao"
+                    maxlength="14"
+                    class="input"
+                    onkeyup="handleCpf(event)"
                 />
                 <div class="btn-control">
                     <button onclick="alteraInfo()" class="button">
